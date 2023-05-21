@@ -1,0 +1,163 @@
+
+:root{
+
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-cyan-2: hsl(179, 62%, 46%);
+    --color-b-yellow: hsl(71, 73%, 54%);
+    --color-l-gray: hsl(204, 43%, 93%);
+    --color-gr-blue: hsl(218, 22%, 67%);
+    --color-white: #fff;
+
+    --padding-40px: 40px 40px 40px 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+  
+
+body {
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-l-gray);
+    padding: 10px;
+}
+
+.container {
+    max-width: 640px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--color-gr-blue) 0px 0px 35px 1px;
+}
+
+.wrapper {
+    background-color: var(--color-white);
+    padding: var(--padding-40px);
+}
+
+.wrapper h1 {
+    color: var(--color-cyan);
+    margin-bottom: 35px;
+}
+
+.wrapper h3 {
+    color: var(--color-b-yellow);
+    margin-bottom: 20px;
+}
+
+.wrapper p {
+    color: var(--color-gr-blue);
+    line-height: 25px;
+}
+
+.hero {
+    display: flex;
+    height: 50%;
+}
+
+.montly {
+    background-color: var(--color-cyan);
+    color: var(--color-l-gray);
+    width: 50%;
+    padding: var(--padding-40px);
+}
+
+.montly h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.montly .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.montly .price span {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.montly .price p {
+    color: var(--color-l-gray);
+    opacity: .5;
+}
+
+.montly p {
+    font-weight: 400;
+}
+
+.montly button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--color-b-yellow);
+    color: var(--color-white);
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+.why {
+    background-color: var(--color-cyan-2);
+    width: 50%;
+    padding: 40px 40px 40px 40px;
+    color: var(--color-l-gray);
+}
+
+.why h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.why li{
+    list-style: none;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+footer{
+    margin-top: 20px;
+}
+.attribution { 
+    
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+
+    color: hsl(228, 45%, 44%); 
+
+} 
+
+@media(max-width: 475px){
+
+    body{
+        height: 100%;
+        padding: 30px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .montly{
+        width: 100%;
+    }
+
+    .why{
+        width: 100%;
+    }
+}
