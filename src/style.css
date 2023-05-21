@@ -29,7 +29,7 @@ body {
 
 .container {
     max-width: 640px;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--color-gr-blue) 0px 0px 35px 1px;
 }
@@ -127,16 +127,15 @@ footer{
     margin-top: 20px;
 }
 .attribution { 
-    
     font-size: 11px; 
     text-align: center; 
 }
 
 .attribution a { 
-
     color: hsl(228, 45%, 44%); 
-
 } 
+
+ /* RESPONSIVIDADE */
 
 @media(max-width: 475px){
 
