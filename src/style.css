@@ -19,6 +19,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;
     font-family: 'Karla', sans-serif;
@@ -161,4 +162,6 @@ footer{
     .why{
         width: 100%;
     }
+
+
 }
